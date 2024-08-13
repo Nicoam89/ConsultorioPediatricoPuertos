@@ -14,10 +14,8 @@
 }
 
 .banner {
-  -o-object-fit: fill;
-     object-fit: fill;
-  height: 20rem;
-  text-align: center;
+  text-align: right;
+  height: 10rem;
   background-color: white;
 }
 
@@ -49,6 +47,11 @@ footer a {
 }
 
 h2 {
+  text-align: center;
+  margin: 3%;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -82,4 +85,5 @@ h2 {
 /* Formato Menu */
 .menu-item {
   width: 30rem;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
