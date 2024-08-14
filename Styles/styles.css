@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Formato Variables */
 /* Reset */
 * {
@@ -96,6 +97,47 @@ h3 {
 }
 
 /* Formato Profesionales */
+.contenedor-prof {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 10px;
+}
+
+/* Para orden predeterminado (ordenador): */
+.elemento-prof:nth-child(1) {
+  grid-column: 1;
+}
+
+.elemento-prof:nth-child(2) {
+  grid-column: 2;
+}
+
+.elemento-prof:nth-child(3) {
+  grid-column: 3;
+}
+
+.elemento-prof:nth-child(4) {
+  grid-column: 4;
+}
+
+/* Media query para dispositivos móviles: */
+@media (max-width: 768px) {
+  .contenedor-prof {
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+  .elemento-prof:nth-child(1) {
+    grid-row: 1;
+  }
+  .elemento-prof:nth-child(2) {
+    grid-row: 2;
+  }
+  .elemento-prof:nth-child(4) {
+    grid-row: 3;
+  }
+  .elemento-prof:nth-child(3) {
+    grid-row: 4;
+  }
+}
 .tarjeta-profesional {
   padding-top: 4%;
 }
