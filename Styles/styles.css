@@ -62,14 +62,16 @@ h3 {
 /* Formato Coberturas */
 /* Formato Contacto */
 .formulario {
-  align-content: center;
+  text-align: center;
   padding: 5%;
   padding-left: 12%;
   padding-right: 12%;
+  width: 70rem;
 }
 
 .button[type=submit]:hover {
   background-color: #4cae4c;
+  width: 120px;
 }
 
 .valores {
@@ -80,10 +82,29 @@ h3 {
   width: 120px;
 }
 
+.contacto {
+  padding-top: 15%;
+}
+
+.ubicacion {
+  width: 60rem;
+}
+
 /* Formato Profesionales */
 /* Formato Servicios */
 /* Formato Menu */
 .menu-item {
   width: 30rem;
   text-align: center;
+}
+
+/* Formato Navegador */
+nav {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.imagen-nav {
+  width: 10rem;
+  padding: 3%;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,13 +2,15 @@
 
 .formulario{
 
-    align-content: center;
+    text-align: center;
     padding: 5%;
     padding-left: 12%;
     padding-right: 12%;
+    width: 70rem;
 }
 .button[type="submit"]:hover {
     background-color: #4cae4c;
+    width:  120px;
 }
 
 .valores{
@@ -18,4 +20,15 @@
 
 .btn{
     width: 120px;
+  }
+
+  .contacto{
+    padding-top: 15%;
+
+  }
+
+
+  .ubicacion{
+    width: 60rem;
+
   }
