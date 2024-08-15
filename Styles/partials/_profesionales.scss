@@ -2,25 +2,19 @@
 
 .contenedor-prof {  display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 0px 0%;
   grid-auto-flow: row;
   grid-template-areas:
     "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
     "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
-    ". resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
-    "resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 imagen-prof2"
-    "resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 imagen-prof2"
-    "resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 .";
+    ". resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1";
 }
 
 .imagen-prof1 { grid-area: imagen-prof1; }
 
 .resumen-prof1 { grid-area: resumen-prof1; }
 
-.resumen-prof2 { grid-area: resumen-prof2; }
-
-.imagen-prof2 { grid-area: imagen-prof2; }
 
 
 /* Media query para dispositivos móviles: */
@@ -29,31 +23,24 @@
   .contenedor-prof {
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
     gap: 0px 0%; 
     grid-template-areas: 
       "imagen-prof1"
       "resumen-prof1"
-      "imagen-prof2"
-      "resumen-prof2"; 
+      "resumen-prof1"
   }
+
   .imagen-prof1 { grid-area: imagen-prof1; }
   .resumen-prof1 { grid-area: resumen-prof1; }
-  .imagen-prof2 { grid-area: imagen-prof2; }
-  .resumen-prof2 { grid-area: resumen-prof2; }
+
 }
 
 
 .resumen-prof1{
-    padding-top: 0%;
+    margin-top: 5%;
     margin: 2%;
     
-}
-
-.resumen-prof2{
-  padding-top: 0%;
-  margin: 2%;
-
 }
 
 .imagen-prof1{
@@ -63,9 +50,3 @@
     text-align: center;
 }
 
-.imagen-prof2{
-  padding-top: 8%;
-  width: 15rem;
-  max-width: 100%;
-  text-align: center;
-}
