@@ -157,12 +157,15 @@ h3 {
 .imagen-prof1 {
   padding-top: 8%;
   max-width: 15rem;
+  max-width: 100%;
   text-align: center;
 }
 
 .imagen-prof2 {
   padding-top: 8%;
-  max-width: 15rem;
+  width: 15rem;
+  max-width: 100%;
+  text-align: center;
 }
 
 /* Formato Servicios */
