@@ -1,17 +1,17 @@
 /* Formato Profesionales */
 
 .contenedor-prof {  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 0px 0%;
   grid-auto-flow: row;
   grid-template-areas:
-    "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
-    "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
-    ". resumen-prof1 resumen-prof1 resumen-prof1"
-    "resumen-prof2 resumen-prof2 resumen-prof2 imagen-prof2"
-    "resumen-prof2 resumen-prof2 resumen-prof2 imagen-prof2"
-    "resumen-prof2 resumen-prof2 resumen-prof2 .";
+    "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
+    "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
+    ". resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
+    "resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 imagen-prof2"
+    "resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 imagen-prof2"
+    "resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 resumen-prof2 .";
 }
 
 .imagen-prof1 { grid-area: imagen-prof1; }
@@ -24,6 +24,7 @@
 
 
 /* Media query para dispositivos móviles: */
+
 @media (max-width: 768px) {
   .contenedor-prof {
     display: grid; 
@@ -43,13 +44,24 @@
 }
 
 
-.resumen-prof1 .resumen-prof2{
-    padding-top: 4%;
-
+.resumen-prof1{
+    padding-top: 0%;
+    margin: 2%;
 }
 
+.resumen-prof2{
+  padding-top: 0%;
+  margin: 2%;
+}
 
-.imagen-prof1 .imagen-prof2{
-     width: 20rem;
+.imagen-prof1{
+    padding-top: 8%;
+    max-width: 15rem;
+    text-align: center;
+}
+
+.imagen-prof2{
+  padding-top: 8%;
+  max-width: 15rem
 
 }
