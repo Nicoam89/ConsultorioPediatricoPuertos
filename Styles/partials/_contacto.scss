@@ -1,7 +1,6 @@
 /* Formato Contacto */
 
 .contacto{
-  max-width: 80%;
   padding-top: 5%;
 
 }
@@ -12,11 +11,13 @@
     padding: 5%;
     padding-left: 12%;
     padding-right: 12%;
-    width: 70rem;
-}
+ }
+
+
 .button[type="submit"]:hover {
     background-color: #4cae4c;
-    width:  120px;
+    width: 100px;
+
 }
 
 .valores{
@@ -24,10 +25,9 @@
 
 }
 
-.boton-envio{
-    width: 120px;
-    max-width: 5%;
-  }
+.ancho-boton{
+  width: 2%
+}
 
   .ubicacion{
     width: 60rem;
