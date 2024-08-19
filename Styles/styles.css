@@ -140,7 +140,7 @@ h3 {
   .imagen-prof1 {
     padding-top: 2rem;
     margin: 1rem;
-    width: 96%;
+    max-width: 768px;
     text-align: right;
   }
   .resumen-prof1 {
