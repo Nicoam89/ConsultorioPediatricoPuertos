@@ -135,16 +135,15 @@ h3 {
 }
 
 .imagen-prof1 {
-  padding-top: 8%;
-  max-width: 15rem;
-  max-width: 100%;
-  text-align: center;
+  padding-top: 5%;
+  width: 15rem;
+  text-align: right;
 }
 
 /* Formato Servicios */
 /* Formato Menu */
 .menu-item {
-  width: 30rem;
+  width: 27rem;
   text-align: center;
 }
 
