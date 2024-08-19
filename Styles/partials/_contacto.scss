@@ -1,5 +1,11 @@
 /* Formato Contacto */
 
+.contacto{
+  max-width: 80%;
+  padding-top: 5%;
+
+}
+
 .formulario{
 
     text-align: center;
@@ -18,15 +24,10 @@
 
 }
 
-.btn{
+.boton-envio{
     width: 120px;
+    max-width: 5%;
   }
-
-  .contacto{
-    padding-top: 15%;
-
-  }
-
 
   .ubicacion{
     width: 60rem;

@@ -67,6 +67,11 @@ h3 {
 
 /* Formato Coberturas */
 /* Formato Contacto */
+.contacto {
+  max-width: 80%;
+  padding-top: 5%;
+}
+
 .formulario {
   text-align: center;
   padding: 5%;
@@ -84,12 +89,9 @@ h3 {
   color: white;
 }
 
-.btn {
+.boton-envio {
   width: 120px;
-}
-
-.contacto {
-  padding-top: 15%;
+  max-width: 5%;
 }
 
 .ubicacion {
