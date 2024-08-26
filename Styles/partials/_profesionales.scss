@@ -34,9 +34,10 @@
   .contenedor-prof {
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
     gap: 0px 0%; 
     grid-template-areas: 
+      "imagen-prof1"
       "imagen-prof1"
       "resumen-prof1"
 
