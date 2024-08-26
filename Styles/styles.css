@@ -1,5 +1,37 @@
 @charset "UTF-8";
 /* Formato Variables */
+.color-texto-azul {
+  color: rgb(104, 132, 194);
+}
+
+.color-texto-naranja {
+  color: rgb(242, 141, 101);
+}
+
+.color-texto-verde {
+  color: rgb(114, 182, 120);
+}
+
+.color-texto-violeta {
+  color: rgb(210, 168, 226);
+}
+
+.color-texto-verdeAzulado {
+  color: rgb(140, 202, 174);
+}
+
+.color-texto-amarillo {
+  color: rgb(251, 190, 94);
+}
+
+.color-texto-rosa {
+  color: rgb(244, 166, 160);
+}
+
+.color-texto-celeste {
+  color: rgb(150, 192, 232);
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -70,26 +102,6 @@ h3 {
   padding-top: 2%;
 }
 
-.color-texto-azul {
-  color: rgb(150, 192, 232);
-}
-
-.color-texto-naranja {
-  color: rgb(242, 141, 101);
-}
-
-.color-texto-verde {
-  color: rgb(114, 182, 120);
-}
-
-.color-texto-violeta {
-  color: rgb(210, 168, 226);
-}
-
-.color-texto-verdeAzulado {
-  color: rgb(140, 202, 174);
-}
-
 /* Formato Contacto */
 .contacto {
   padding-top: 5%;
@@ -123,10 +135,10 @@ h3 {
 .contenedor-prof {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 0px 0%;
   grid-auto-flow: row;
-  grid-template-areas: "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1" "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1" ". resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1";
+  grid-template-areas: "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1" "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1";
 }
 
 .imagen-prof1 {

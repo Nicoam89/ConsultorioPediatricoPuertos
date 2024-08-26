@@ -2,13 +2,12 @@
 
 .contenedor-prof {  display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 0px 0%;
   grid-auto-flow: row;
   grid-template-areas:
     "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
-    "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1"
-    ". resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1";
+    "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1";
 }
 
 .imagen-prof1 { grid-area: imagen-prof1; }
