@@ -14,7 +14,7 @@ exit();
 }
 
 // Enviar correo electrónico
-$para = "consultas@centropediatricopuertos.com";
+$para = "nico.am89@gmail.com";
 $asunto = "Contacto web - " . $email;
 $cuerpo = "Nombre: $nombre \nCorreo electrónico: $email \nMensaje: $mensaje";
 $cabecera = "MIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nFrom: $nombre <$email>\n";
