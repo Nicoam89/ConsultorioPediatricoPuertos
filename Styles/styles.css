@@ -47,6 +47,27 @@
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 15px;
+  text-align: center;
+}
+
+main {
+  padding-bottom: 3%;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Aumenta el tamaño un 10% */
+a:hover {
+  transform: scale(1.2);
 }
 
 /* Formato Header */
@@ -90,7 +111,7 @@ footer a {
 
 h1 {
   text-align: center;
-  margin: 3%;
+  padding: 3%;
 }
 
 h2 {
@@ -116,9 +137,15 @@ section {
 }
 
 /* Formato Coberturas */
+.coberturas {
+  padding-bottom: 3%;
+}
+
 /* Formato Contacto */
 .contacto {
   padding-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .formulario {
@@ -143,68 +170,26 @@ section {
 
 .ubicacion {
   width: 60rem;
+  padding-bottom: 5%;
 }
 
 /* Formato Profesionales */
 .contenedor-prof {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px 10px;
-  text-align: center;
-  padding: 2%;
+  padding-bottom: 5%;
 }
-
-.imagen-prof1 {
-  grid-area: imagen-prof1;
-}
-
-.imagen-prof1 {
-  padding-top: 2rem;
-  margin: 1rem;
-  width: 20rem;
-  text-align: right;
-}
-
-.resumen-prof1 {
-  grid-area: resumen-prof1;
-}
-
-.resumen-prof1 {
-  margin-top: 5%;
+.contenedor-prof p {
+  text-align: justify;
   margin: 2%;
 }
 
-/* Media query para dispositivos móviles: */
-@media (max-width: 768px) {
-  .contenedor-prof {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 1fr);
-    gap: 10px 10px;
-    padding: 2%;
-  }
-  .imagen-prof1 {
-    grid-area: imagen-prof1;
-  }
-  .imagen-prof1 {
-    padding-top: 2rem;
-    margin: 1rem;
-    max-width: 768px;
-    text-align: right;
-  }
-  .resumen-prof1 {
-    grid-area: resumen-prof1;
-  }
-  .resumen-prof1 {
-    margin-top: 1%;
-    margin: 1%;
-  }
+.imagen-prof {
+  margin: 2%;
+  margin-left: 2%;
 }
+
 /* Formato Servicios */
-/* Formato Menu */
-.menu-item {
-  width: 27rem;
-  text-align: center;
+.listado-servicios {
+  padding: 3%;
 }
 
 /* Formato Navegador */
@@ -221,16 +206,24 @@ nav {
   display: block;
 }
 
+/* Animacion Imagenes */
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 /* Menu Principal */
 .menu-index {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   text-align: center;
-  margin: 1%;
-  padding: 2%;
 }
 
 @media (max-width: 576px) {
@@ -239,4 +232,28 @@ nav {
     grid-template-rows: repeat(4, 1fr);
   }
 }
-@impo;/*# sourceMappingURL=styles.css.map */
+.menu-item {
+  text-align: center;
+  padding: 2%;
+}
+
+.imagen-menu {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Animacion Imagenes */
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */
