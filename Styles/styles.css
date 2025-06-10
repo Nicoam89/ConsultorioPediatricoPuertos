@@ -46,6 +46,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  border-radius: 15px;
 }
 
 /* Formato Header */
@@ -149,9 +150,9 @@ section {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 0px 0%;
-  grid-auto-flow: row;
-  grid-template-areas: "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1" "imagen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1 resumen-prof1";
+  gap: 10px 10px;
+  text-align: center;
+  padding: 2%;
 }
 
 .imagen-prof1 {
@@ -177,11 +178,10 @@ section {
 /* Media query para dispositivos móviles: */
 @media (max-width: 768px) {
   .contenedor-prof {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0px 0%;
-    grid-template-areas: "imagen-prof1" "imagen-prof1" "resumen-prof1";
+    grid-template-rows: repeat(11, 1fr);
+    gap: 10px 10px;
+    padding: 2%;
   }
   .imagen-prof1 {
     grid-area: imagen-prof1;
@@ -219,4 +219,24 @@ nav {
   max-width: 100%;
   height: auto;
   display: block;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* Menu Principal */
+.menu-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  text-align: center;
+  margin: 1%;
+  padding: 2%;
+}
+
+@media (max-width: 576px) {
+  .menu-index {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@impo;/*# sourceMappingURL=styles.css.map */

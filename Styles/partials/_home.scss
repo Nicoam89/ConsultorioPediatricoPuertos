@@ -1,0 +1,29 @@
+/* Menu Principal */
+
+.menu-index  {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px; 
+
+  text-align: center;
+  margin: 1%;
+  padding: 2%;
+}
+
+@media (max-width: 576px) { 
+  .menu-index {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+.menu-item{
+        text-align: center;
+}
+
+.imagen-menu{
+    max-width: 500px;
+    text-align: center;
+}
