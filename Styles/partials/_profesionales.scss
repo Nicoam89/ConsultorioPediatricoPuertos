@@ -1,56 +1,13 @@
 /* Formato Profesionales */
 
-.contenedor-prof {  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px 10px;
-  text-align: center;
-  padding: 2%; 
-}
-
-.imagen-prof1 { grid-area: imagen-prof1; }
-.imagen-prof1{
-  padding-top: 2rem;
-  margin: 1rem;
-  width: 20rem;
-  text-align: right;
+.contenedor-prof {  
+  padding: 3%;
 }
 
 
 
-.resumen-prof1 { grid-area: resumen-prof1; }
-.resumen-prof1{
-  margin-top: 5%;
-  margin: 2%;
-  
-}
 
 
-/* Media query para dispositivos móviles: */
-
-@media (max-width: 768px) {
-  .contenedor-prof {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 1fr);
-    gap: 10px 10px;
-    padding: 2%; 
-
-  }
-
-  .imagen-prof1 { grid-area: imagen-prof1; }
-  .imagen-prof1{
-    padding-top: 2rem;
-    margin: 1rem;
-    max-width: 768px;
-    text-align: right;
-  }
-  .resumen-prof1 { grid-area: resumen-prof1; }
-  .resumen-prof1{
-    margin-top: 1%;
-    margin: 1%;
-    
-  }
-}
 
 
 
