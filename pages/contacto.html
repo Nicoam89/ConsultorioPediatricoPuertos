@@ -35,21 +35,25 @@
         <div class="row d-flex align-items-center justify-content-center">
         <h2 class="sub-titulo col color-texto-violeta">Formulario de Contacto</h2>
         </div>
-        <form class="row formulario d-flex align-items-center justify-content-center" method="post" action="/contacto.php">
-          <div class="mb-3">
-            <label for="nombre" class="form-label color-texto-verde">Nombre y Apellido</label>
-            <input type="nombre" class="form-control" id="nombre" aria-describedby="emailHelp" name="nombre">
+        <form action="https://formspree.io/f/xqabqggw" method="POST" class="row formulario d-flex align-items-center justify-content-center container" id="contactForm">
+            <div class="mb-3 row">
+                <label for="name" class="form-label color-texto-verde col"> Nombre y Apellido</label>
+                <input class="col" type="text" id="name" name="name" required>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label color-texto-amarillo">E-Mail</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+            <div class="mb-3 row">
+                <label for="email" class="form-label color-texto-amarillo col">Email:</label>
+                <input class="col" type="email" id="email" name="email" required>
             </div>
-            <div class="mb-3">
-              <label for="mensaje" class="form-label color-texto-violeta">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+            <div class="mb-3 row">
+                <label for="message" class="form-label color-texto-violeta col">Mensaje:</label>
+                <textarea class="col" id="message" name="message" required></textarea>
             </div>
-          <div class="ancho-boton"><button type="submit" class="btn btn-outline-primary" a>Enviar</button></div>
+            <div class="ancho-boton">
+                <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            </div>
         </form>
+          
+
         </section>
         <section class="container contacto color-fondo rows">
             <h2 class="sub-titulo color-texto-verdeAzulado">O Visitenos en Nuestro Consultorio</h2>
@@ -69,10 +73,12 @@
                 <a class="col d-flex align-items-center justify-content-center text-decoration-none color-texto-verdeAzulado" href="http://Instagram.com/pediatriapuertos" target="_blank" rel="noopener noreferrer">Instagram</a></h3>
            </footer>
 </body>
-    <!-- Scripts -->
+    <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <!-- Scripts js -->
+            <script src="scripts.js"></script>   
 </html>
