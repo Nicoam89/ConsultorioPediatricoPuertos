@@ -192,6 +192,20 @@ section {
   padding: 3%;
 }
 
+.listados {
+  margin-bottom: 3%;
+}
+.listados a {
+  text-decoration: none;
+}
+.listados a:visited {
+  text-decoration: none;
+}
+
+.especialidad {
+  margin: 2%;
+}
+
 /* Formato Navegador */
 nav {
   text-align: center;
