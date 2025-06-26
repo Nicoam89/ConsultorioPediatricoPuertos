@@ -141,6 +141,11 @@ section {
   padding-bottom: 3%;
 }
 
+.logoOS {
+  border-radius: 15%;
+  margin-top: 3%;
+}
+
 /* Formato Contacto */
 .contacto {
   padding-top: 5%;
